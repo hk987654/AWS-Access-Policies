@@ -3,4 +3,4 @@
 
 ## Usage
 
-To use a policy, copy the JSON file into your AWS IAM policy configuration. Make sure to review and customize the policy as necessary to fit your specific requirements.
+To use a policy, copy the JSON file into respective AWS policy configuration. Make sure to review and customize the policy as necessary to fit the specific requirements.
