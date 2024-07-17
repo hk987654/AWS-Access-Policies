@@ -7,7 +7,7 @@
         "Action": [
           "s3:PutObject",
           "s3:PutObjectAcl",
-          "s3:ListBucket"
+          "s3:ListBucket" # Attach policies as per requirement.
         ],
         "Resource": [
           "<S3_Bucket_ARN>", # Replace <S3_Bucket_ARN> with ARN of Bucket to be shared.
