@@ -10,8 +10,8 @@
           "s3:ListBucket"
         ],
         "Resource": [
-          "arn:aws:s3:::<Bucket_Name>", # Replace <Bucket_Name> with Bucket Name to be shared.
-          "arn:aws:s3:::<Bucket_Name>*" # Replace <Bucket_Name> with Bucket Name to be shared.
+          "<S3_Bucket_ARN>", # Replace <S3_Bucket_ARN> with ARN of Bucket to be shared.
+          "<S3_Bucket_ARN>/*", # Replace <S3_Bucket_ARN> with ARN of Bucket to be shared.
         ]
       }
     ]
