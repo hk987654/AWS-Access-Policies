@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DelegateS3AccessToCrossAccountUser",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::226487125561:user/Shubhams"
+        },
+        "Action": [
+          "s3:PutObject",
+          "s3:PutObjectAcl",
+          "s3:ListBucket"
+        ],
+        "Resource": [
+          "arn:aws:s3:::hk-demobucket-16-july-publicaccess",
+          "arn:aws:s3:::hk-demobucket-16-july-publicaccess/*"
+        ]
+      }
+    ]
+  }
