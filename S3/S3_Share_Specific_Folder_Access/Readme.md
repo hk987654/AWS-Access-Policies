@@ -10,5 +10,8 @@
 1. Create an IAM Policy, allowing access to the specific Folder of S3 Bucket.
 2. Attach the Policy to the user.
 
+
+For more in-depth knowledge and additional resources, please refer to https://repost.aws/knowledge-center/s3-folder-user-access.
+
 **Sample Policy Files are attached in the folder.**
 
