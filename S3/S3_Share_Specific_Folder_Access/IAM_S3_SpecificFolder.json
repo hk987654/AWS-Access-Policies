@@ -1,0 +1,64 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ListAllBucketsStatement",
+        "Action": [
+          "s3:ListAllMyBuckets",
+          "s3:GetBucketLocation"
+        ],
+        "Effect": "Allow",
+        "Resource": [
+          "arn:aws:s3:::*"
+        ]
+      },
+      {
+        "Sid": "ListFoldersInBucketStatement",
+        "Action": [
+          "s3:ListBucket"
+        ],
+        "Effect": "Allow",
+        "Resource": [
+          "arn:aws:s3:::hk-demobucket-16-july"
+        ],
+        "Condition": {
+          "StringEquals": {
+            "s3:prefix": [
+              "",
+              "user_access/"
+            ],
+            "s3:delimiter": [
+              "/"
+            ]
+          }
+        }
+      },
+      {
+        "Sid": "ListContentInFolderStatement",
+        "Action": [
+          "s3:ListBucket"
+        ],
+        "Effect": "Allow",
+        "Resource": [
+          "arn:aws:s3:::hk-demobucket-16-july"
+        ],
+        "Condition": {
+          "StringLike": {
+            "s3:prefix": [
+              "user_access/*"
+            ]
+          }
+        }
+      },
+      {
+        "Sid": "AllowPermissionsOfFolderStatement",
+        "Effect": "Allow",
+        "Action": [
+          "s3:*"
+        ],
+        "Resource": [
+          "arn:aws:s3:::hk-demobucket-16-july/user_access/*"
+        ]
+      }
+    ]
+  }
