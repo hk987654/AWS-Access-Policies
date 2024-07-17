@@ -40,12 +40,12 @@
         ],
         "Effect": "Allow",
         "Resource": [
-          "<S3_Bucket_ARN>" #Replace with ARN of S3 bucket to be shared.
+          "<S3_Bucket_ARN>" #Replace with ARN of the S3 Bucket to be shared.
         ],
         "Condition": {
           "StringLike": {
             "s3:prefix": [
-              "user_access/*"
+              "<Folder>/*" #Replace with Folder Name for which acces is to be granted.
             ]
           }
         }
