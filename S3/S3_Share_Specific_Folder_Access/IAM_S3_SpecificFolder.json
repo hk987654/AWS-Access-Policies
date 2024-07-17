@@ -57,7 +57,7 @@
           "s3:*"
         ],
         "Resource": [
-          "arn:aws:s3:::hk-demobucket-16-july/user_access/*"
+          "<Folder_ARN>/*" #Replace with Folder ARN in S3 for which acces is to be granted.
         ]
       }
     ]
