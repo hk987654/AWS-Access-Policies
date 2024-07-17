@@ -21,7 +21,9 @@
 6. Give a name, choose the bucket is in other account.
 7. Add Account ID of Source Bucket and S3 Bucket Name.
 8. Choose Network Origin as Internet and create the Access Point.
-Through this Access point in Target User Account, we can access the Source S3 bucket of Source account and perform actions which are allowed as per policys attached to IAM User and S3 Bucket.
+Through this Access point in Target User Account, we can access the Source S3 bucket of Source account and perform actions which are allowed as per policies attached to IAM User and S3 Bucket.
+
+For more in-depth knowledge and additional resources, please refer to https://repost.aws/knowledge-center/s3-cross-account-upload-access.
 
 #
 **Sample Policy Files are attached in the folder.**
