@@ -17,3 +17,5 @@
 8. Choose Network Origin as Internet and create the Access Point.
 
 Through this Access point in Target User Account, we can access the Source S3 bucket of Source account and perform actions which are allowed as per policys attached to IAM User and S3 Bucket.
+
+**Sample Policy Files are attached in the folder.**
